@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samtalsterapeut</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Samtalsterapeut</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Hem</a></li>
+                    <li><a href="#services">Tjänster</a></li>
+                    <li><a href="#booking">Boka Samtal</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Välkommen till din samtalsterapeut</h2>
+            <p>Jag erbjuder en trygg plats för samtal och personlig utveckling.</p>
+            <a href="#booking" class="btn">Boka ett Samtal</a>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Tjänster</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <h3>Individuell Terapi</h3>
+                    <p>Enskilda sessioner där vi fokuserar på dina personliga utmaningar och mål.</p>
+                    <ul>
+                        <li>Personlig utveckling</li>
+                        <li>Bearbetning av trauma</li>
+                        <li>Hantera ångest och depression</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Parterapi</h3>
+                    <p>Samtal för par som vill förbättra sin relation och kommunikation.</p>
+                    <ul>
+                        <li>Kommunikationsövningar</li>
+                        <li>Konfliktlösning</li>
+                        <li>Stärka förtroende och närhet</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Stresshantering</h3>
+                    <p>Lär dig tekniker för att minska stress och hitta balans i livet.</p>
+                    <ul>
+                        <li>Andningstekniker</li>
+                        <li>Mindfulness</li>
+                        <li>Livsstilsrådgivning</li>
+                    </ul>
+                </div>
+                <div class="service-item">
+                    <h3>Virtuell Terapi</h3>
+                    <p>Boka videosamtal för att få stöd oavsett var du befinner dig.</p>
+                    <ul>
+                        <li>Säkra och privata sessioner</li>
+                        <li>Flexibla tider</li>
+                        <li>Bekvämlighet i ditt eget hem</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking" class="booking">
+        <div class="container">
+            <h2>Boka ett Samtal</h2>
+            <form action="#">
+                <label for="name">Namn:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-post:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="service">Välj Tjänst:</label>
+                <select id="service" name="service" required>
+                    <option value="individuell">Individuell Terapi</option>
+                    <option value="parterapi">Parterapi</option>
+                    <option value="stresshantering">Stresshantering</option>
+                    <option value="virtuell">Virtuell Terapi</option>
+                </select>
+                
+                <label for="date">Datum:</label>
+                <input type="date" id="date" name="date" required>
+                
+                <label for="time">Tid:</label>
+                <input type="time" id="time" name="time" required>
+                
+                <label for="message">Kort beskrivning av ärendet:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit" class="btn">Boka nu</button>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <p>Har du frågor eller vill veta mer om mina tjänster? Hör av dig så hjälper jag dig!</p>
+            <form action="#">
+                <label for="contact-name">Namn:</label>
+                <input type="text" id="contact-name" name="contact-name" required>
+                
+                <label for="contact-email">E-post:</label>
+                <input type="email" id="contact-email" name="contact-email" required>
+                
+                <label for="contact-message">Meddelande:</label>
+                <textarea id="contact-message" name="contact-message" required></textarea>
+                
+                <button type="submit" class="btn">Skicka</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Samtalsterapeut. Alla rättigheter förbehållna.</p>
+        </div>
+    </footer>
+</body>
+</html>
